@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native';
 
-export const ImageDetail = () => {
-  return <Text>Show image of forest</Text>;
+export const ImageDetail = ({ title }) => {
+  return <Text>{title}</Text>;
 };
 
 const styles = StyleSheet.create({});
