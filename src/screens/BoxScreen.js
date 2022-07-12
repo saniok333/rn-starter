@@ -22,11 +22,15 @@ const styles = StyleSheet.create({
   },
   textStyle1: {
     flex: 1,
-    left: 10,
   },
   textStyle2: {
     flex: 1,
-    top: 10,
+    ...StyleSheet.absoluteFillObject,
+    // position: 'absolute',
+    // top: 0,
+    // bottom: 0,
+    // left: 0,
+    // right: 0,
   },
   textStyle3: {
     flex: 1,
