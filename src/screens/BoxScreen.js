@@ -15,9 +15,6 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: 'black',
     height: 200,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
   },
   textStyle: {
     borderWidth: 3,
@@ -25,15 +22,13 @@ const styles = StyleSheet.create({
   },
   textStyle1: {
     flex: 1,
-    //alignSelf: 'flex-start',
+    left: 10,
   },
   textStyle2: {
-    flex: 2,
-    alignSelf: 'flex-end',
-    position: 'absolute',
+    flex: 1,
+    top: 10,
   },
   textStyle3: {
     flex: 1,
-    //alignSelf: 'flex-end',
   },
 });
