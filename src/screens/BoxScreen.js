@@ -2,37 +2,27 @@ import { StyleSheet, View, Text, TextInput } from 'react-native';
 
 export const BoxScreen = () => {
   return (
-    <View style={styles.viewStyle}>
-      <Text style={[styles.textStyle, styles.textStyle1]}>Child #1</Text>
-      <Text style={[styles.textStyle, styles.textStyle2]}>Child #2</Text>
-      <Text style={[styles.textStyle, styles.textStyle3]}>Child #3</Text>
+    <View style={styles.parentViewStyle}>
+      <View style={[styles.viewStyle, styles.viewStyle1]} />
+      <View style={[styles.viewStyle, styles.viewStyle2]} />
+      <View style={[styles.viewStyle, styles.viewStyle3]} />
     </View>
   );
 };
 
 const styles = StyleSheet.create({
-  viewStyle: {
+  parentViewStyle: {
     borderWidth: 1,
     borderColor: 'black',
+    flexDirection: 'row',
     height: 200,
+    justifyContent: 'space-between',
   },
-  textStyle: {
-    borderWidth: 3,
-    borderColor: 'red',
+  viewStyle: {
+    width: 100,
+    height: 100,
   },
-  textStyle1: {
-    flex: 1,
-  },
-  textStyle2: {
-    flex: 1,
-    ...StyleSheet.absoluteFillObject,
-    // position: 'absolute',
-    // top: 0,
-    // bottom: 0,
-    // left: 0,
-    // right: 0,
-  },
-  textStyle3: {
-    flex: 1,
-  },
+  viewStyle1: { backgroundColor: 'red' },
+  viewStyle2: { backgroundColor: 'green', alignSelf: 'flex-end' },
+  viewStyle3: { backgroundColor: 'blue' },
 });
