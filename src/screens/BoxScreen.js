@@ -25,13 +25,15 @@ const styles = StyleSheet.create({
   },
   textStyle1: {
     flex: 1,
-    alignSelf: 'flex-start',
+    //alignSelf: 'flex-start',
   },
   textStyle2: {
     flex: 2,
+    alignSelf: 'flex-end',
+    position: 'absolute',
   },
   textStyle3: {
     flex: 1,
-    alignSelf: 'flex-end',
+    //alignSelf: 'flex-end',
   },
 });
